@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Add to Cart</title>
+	<link rel="stylesheet" type="text/css" href="page/add_to_cart.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+	<script type="text/javascript" src="add_to_cart.js"></script>
+</head>
+<body>
+	<!-- nav -->
+	<nav class="navbar bg-light shadow mb-3">
+		<div class="container">
+			<a href="page/jewel.html" class="btn text-primary"><p><i class="fas fa-cart-arrow-down mr-1"></i>Continue Shopping</p></a>
+			<h3 class="text-center">Cart Summary</h3>
+			<h2><img src="images/logo.png" class="w-25 h-25"></h2>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="table-responsive">
+			<table class="table table-striped" id="detail">
+				<tbody id="show_detail">
+					
+				</tbody>
+			</table>
+		</div>
+
+		<!-- promo code -->
+		<button class="btn btn-light" id="promocode">PROMO CODE?</button>
+		<button class="btn btn-outline-dark text-danger" id="clear">Clear</button>
+		<!-- check table	 -->
+		<div class="row" id="checkTable">
+			<div class="offset-md-7 col-md-5">
+				<table class="table">
+					<tr class="w-100">
+						<td><h5>Total:</h5></td>
+						<td class="text-right" id="total1"></td>
+					</tr>
+					<tr>
+						<td colspan="2"><button class="btn btn-outline-dark w-100 text-center" data-toggle="modal"data-target="#myModal">-->Checkout</button></td>
+					</tr>
+					<tr>
+						<td colspan="2">Shipping and texas will be calculated in checkout</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="text-center"><i class="fas fa-lock"></i><a href="" class="ml-1">Secure by Shipcat</a></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="modal fade" id="myModal">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h2 class="ml-3">Register</h2>
+						<button class="close" data-dismiss="modal">X</button>
+					</div>
+					<div class="modal-body">
+						<div class="container">
+							<form action="" method="">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="first_name">First Name:</label><input type="text" name="first_name" class="form-control" id="first_name">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="last_name">Last Name:</label><input type="text" name="last_name" class="form-control" id="last_name">
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="email" for="email">Email:</label>
+									<input type="email" name="email" id="email" class="form-control"required="required">
+								</div>
+								<div class="form-group text-center">
+									<h6>Phone Number:</h6>
+									<div class="row">
+										<div class="col-md-6">
+											<label for="main_no">Precedence Number</label>
+											<input type="text" name="main_no" id="main_no" class="form-control" required="required">
+										</div>
+										<div class="col-md-6">
+											<label for="secondary_no">Secondary Number</label>
+											<input type="text" name="secondary_no" id="secondary_no" class="form-control" required="required">
+										</div>
+									</div>
+								</div>
+								<div class="form-group" id="country1">
+									<label for="country">Select Country:</label>
+									<select class="form-control" id="country2" required="required">
+										<option disabled="disabled">Country</option>
+										<option value="1">Yangon</option>
+										<option value="2">Mandalay</option>
+										<option value="3">Nay Pyi Thaw</option>
+										<option value="4">Muse</option>
+										<option value="5">Other</option>
+									</select>
+								</div>
+								<div class="form-group" id="other">
+									<label for="other">Type Your Country:</label>
+									<input type="text" name="other" class="form-control">
+								</div>
+								<div class="form-group">
+									<label for="address">Full Address:</label>
+									<textarea id="address" class="form-control h-100" required="required" placeholder="Type here"></textarea>
+								</div>
+								<div class="form-group">
+									<label for="payment">Payment Type:</label>
+									<select id="payment" class="form-control">
+										<option disabled="disabled">Payment</option>
+										<option value="1">Cash</option>
+										<option value="2">Check</option>
+										<option value="3">Credit Card</option>
+										<option value="4">Mobile Payments</option>
+										<option value="5"> Bitcoin</option>
+										<option value="6"> Bartering</option>
+										<option value="7"> Money Orders</option>
+										<option value="8"> ACH</option>
+									</select>
+								</div>
+								<div class="form-group text-right">
+									<input type="submit" name="button" class="btn btn-outline-primary" value="Register">
+									<button class="btn btn-outline-dark" data-dismiss="modal">Close</button>
+
+								</div>
+							</form>
+						</div>
+						<div class="container">
+							<div class="table-responsive">
+								<table class="table">
+									<thead class="bg-dark text-light">
+										<tr>
+											<td>Name</td>
+											<td>Price</td>
+											<td>Qty</td>
+											<td>Subtotal</td>
+										</tr>
+									</thead>
+									<tbody id="checkout_table">
+										
+									</tbody>
+									<tfoot>
+										<tr>
+											<th colspan="2">Shipping</th>
+											<td colspan="2" class="text-center">0.000</td>
+										</tr>
+										<tr>
+											<th colspan="2">Texas</th>
+											<td colspan="2" class="text-center">0.0000</td>
+										</tr>
+										<tr>
+											<th colspan="2">Total:</th>
+											<td colspan="2" class="text-center" id="total2"></td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</div>
+</body>
+</html>

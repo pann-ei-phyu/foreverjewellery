@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jade Ring Page</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="../add_to_cart.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="../fontawesome/css/all.min.css">
+	<style type="text/css">
+		.h{
+			color: yellow;
+			font-size: 30px;
+		}
+		.item{
+			color: black;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light py-1" style="background-color:#f9f1b3;">
+		<div class="container">
+			<a href="index.html" class="navbar-brand"><img src="images/logo.png" width="70">Forever Jwellery</a>
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#myNav">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div id="myNav" class="collapse navbar-collapse">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a href="index.html" class="nav-link myLink">Home</a></li>
+					<li class="nav-item"><a href="about.html" class="nav-link myLink">About</a></li>
+					<li class="nav-item"><a href="../page/jewel.html" class="nav-link myLink">Jewellery</a></li>
+					<li class="nav-item"><a href="contact.html" class="nav-link myLink">Contact</a></li>
+					<li class="nav-item"><a href="../add_to_cart.html" class="nav-link myLink"><i class="fas fa-cart-plus fa-2x"></i></a></li>
+				</ul> 
+			</div>
+		</div>
+	</nav>
+
+	<div class="container-fluid mt-5">
+
+
+		<div class="row my-5">
+			<div class="col-md-3">
+				<ul class="navbar-nav ml-auto">
+					<li class="navbar-item text-center"><a href="jade.html" class="nav-link"><p class="item">Show Case</p></a></li>
+					<li class="navbar-item text-center"><a href="ringJade.html" class="nav-link"><p class="item">Ring</p></a></li>
+					<li class="navbar-item text-center"><a href="earingJade.html" class="nav-link"><p class="item">Earing</p></a></li>
+					<li class="navbar-item text-center"><a href="necklaceJade.html" class="nav-link"><p class="item">Necklace & set</p></a></li>
+					<li class="navbar-item text-center"><a href="../add_to_cart.html" class="nav-link"><p class="item">add_to_cart</p></a></li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<div class="card shadow">
+					<img src="images/jaderg2.jpeg" class="card-img-top" data-toggle="modal" data-target="#modajr2">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card shadow">
+					<img src="images/jaderg3.jpeg" class="card-img-top" data-toggle="modal" data-target="#modajr3">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card shadow">
+					<img src="images/jaderg5.jpeg" class="card-img-top" data-toggle="modal" data-target="#modajr4">
+				</div>
+			</div>
+		</div>
+		<div class="row my-5">
+			<div class="col-md-3">
+				
+			</div>
+			<div class="col-md-3">
+				<div class="card shadow">
+					<img src="images/jaderg8.jpeg" class="card-img-top" data-toggle="modal" data-target="#modajr6">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card shadow">
+					<img src="images/jaderg9.jpeg" class="card-img-top" data-toggle="modal" data-target="#modajr7">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card shadow">
+					<img src="images/jaderg7.jpeg" class="btn-link card-img-top" data-toggle="modal" data-target="#modajr5">
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+	<!-- modal -->
+	<div class="modal" id="modajr1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header images">
+					<h4>Item Detail</h4>
+					<button class="close" data-dismiss="modal">x</button>
+				</div>
+				<div class="modal-body">
+					<div class="container">
+						<div class="row">
+							<div>
+								<img src="images/jaderg1.jpeg" class="img-fluid">
+							
+								<p><b>Name:</b>Jade Ring</p>
+								<p><b>Price:</b>$30000</p>
+								<p><b>QTY:</b>1</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer images">
+					<button class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button class="btn btn-success uptoget" data-id="je1" data-name="Jade Ring" data-img="page/images/jaderg1.jpeg" data-price="30000" data-qty="1">Up to Get</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modajr2">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header images">
+					<h4>Item Detail</h4>
+					<button class="close" data-dismiss="modal">x</button>
+				</div>
+				<div class="modal-body">
+					<div class="container">
+						<div class="row">
+							<div>
+								<img src="images/jaderg2.jpeg" class="img-fluid">
+							
+								<p><b>Name:</b>Jade Ring</p>
+								<p><b>Price:</b>$30000</p>
+								<p><b>QTY:</b>1</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer images">
+					<button class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button class="btn btn-success uptoget" data-id="je2" data-img="page/images/jaderg2.jpeg" data-name="Jade Ring" data-price="30000" data-qty="1">Up to Get</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
+
+
